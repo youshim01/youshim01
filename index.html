@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>youshim01</title>
+  <meta name="description" content="youshim01 的个人作品集，展示文字、摄影与设计创作">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Helvetica Neue", sans-serif;
+      background-color: #ffe6f0;
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 30px;
+      background: #ffcce5;
+    }
+
+    header h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+      color: #d63384;
+      animation: typing 2s steps(30) 1s forwards;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #d63384;
+      font-weight: bold;
+    }
+
+    .hero {
+      position: relative;
+      height: 100vh; /* 让 hero 部分占满整个视口高度 */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: url('hero.jpg') no-repeat center center;
+      background-size: cover; /* 确保背景图完全覆盖区域 */
+      background-position: center center;
+      background-color: #ffe6f0;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(255, 255, 255, 0.6);
+    }
+
+    .hero h2 {
+      position: relative;
+      font-size: 48px; /* 增大字体 */
+      color: #d63384;
+      z-index: 1;
+      animation: typing 3s steps(30) 1s forwards;
+    }
+
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h3 {
+      color: #cc3366;
+    }
+
+    .buttons {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    .buttons a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 24px;
+      background-color: #d63384;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+
+    .buttons a:hover {
+      background-color: #b8256b;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #ffcce5;
+      color: #555;
+    }
+
+    /* 背景动画 */
+    .stars {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: url('stars.gif') repeat;
+      animation: starAnim 60s linear infinite;
+      z-index: -1;
+    }
+
+    @keyframes starAnim {
+      0% { background-position: 0 0; }
+      100% { background-position: 100% 100%; }
+    }
+  </style>
+</head>
+<body>
+  <!-- 背景音乐 -->
+  <audio autoplay loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-creativecommons.mp3" type="audio/mp3">
+  </audio>
+
+  <!-- 背景星空动画 -->
+  <div class="stars"></div>
+
+  <header>
+    <h1>youshim01</h1>
+    <p>作品集与创作展示</p>
+    <nav>
+      <a href="#about">关于我</a>
+      <a href="#portfolio">作品</a>
+      <a href="#contact">联系我</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>안녕하세요, 欢迎来到我的主页</h2>
+  </section>
+
+  <div class="container" id="about">
+    <h3>关于我</h3>
+    <p>안녕하세요, 저는 사진과 디자인을 사랑하는 동국대학교 미디어 커뮤니케이션학과 학생 유심입니다.</p>
+  </div>
+
+  <div class="container" id="portfolio">
+    <h3>作品</h3>
+    <p>youtube+resume</p>
+    <!-- 可加图片或链接 -->
+  </div>
+
+  <div class="container buttons">
+    <a href="https://youtube.com/@shim22ii?si=7DNtRrVO81K3BWoS" target="_blank">我的 YouTube</a>
+    <a href="resume.pdf" target="_blank">See My Resume</a> <!-- 你以后可以上传 resume.pdf 文件 -->
+  </div>
+
+  <div class="container" id="contact">
+    <h3>联系我</h3>
+    <p>Email: youshim01@naver.com</p>
+  </div>
+
+  <footer>
+    <p>© 2025 youshim01</p>
+  </footer>
+</body>
+</html>
